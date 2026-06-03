@@ -29,8 +29,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    'musiic-app.onrender.com',
-]
+    'music-69s8.onrender.com','127.0.0.1',"localhost"]
 CSRF_TRUSTED_ORIGINS = [
     "https://musiic-app.onrender.com",
 ]

@@ -16,7 +16,6 @@
             min-height: 100vh;
         }
 
-        /* center container */
         .container {
             display: flex;
             justify-content: center;
@@ -24,13 +23,12 @@
             height: 100vh;
         }
 
-        /* button group */
         .vip {
             display: flex;
             gap: 25px;
         }
 
-        /* buttons */
+       
         .vip a {
             position: relative;
             display: inline-block;
@@ -53,13 +51,11 @@
             overflow: hidden;
         }
 
-        /* show animation */
+       
         .vip a.show {
             transform: translateY(0) scale(1);
             opacity: 1;
         }
-
-        /* hover effect */
         .vip a:hover {
             transform: rotateY(10deg) rotateX(10deg) scale(1.08);
             box-shadow: 0 25px 50px rgba(0,0,0,0.8);
@@ -82,7 +78,7 @@
             left: 100%;
         }
 
-        /* music icon */
+        
         .vip a::after {
             content: " 🎵";
         }

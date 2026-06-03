@@ -27,9 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "musiic-app.onrender.com",
-    "localhost",
-    "127.0.0.1",
-    "*",
+    ".onrender.com",
+    'musiic-app.onrender.com',
 ]
 
 # Application definition

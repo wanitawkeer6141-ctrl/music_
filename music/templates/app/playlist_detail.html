@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ playlist.name }}</title>
+</head>
+<body>
+
+<h1>{{ playlist.name }}</h1>
+
+{% for song in playlist.song.all %}
+    <div>
+        <h3>{{ song.name }}</h3>
+        <p>{{ song.artist }}</p>
+
+        {% if song.image %}
+            <img src="{{ song.image.url }}" width="200">
+        {% endif %}
+
+        <audio controls>
+            <source src="{{ song.audio.url }}" type="audio/mpeg">
+        </audio>
+    </div>
+    <hr>
+{% empty %}
+    <p>No songs in this playlist.</p>
+{% endfor %}
+
+</body>
+</html>

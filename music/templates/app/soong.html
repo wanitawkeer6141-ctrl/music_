@@ -1,0 +1,12 @@
+{% for song in songs %}
+    <h3>{{ song.name }}</h3>
+    <p>{{ song.artist }}</p>
+
+    <audio controls>
+        <source src="{{ song.audio.url }}">
+    </audio>
+
+    <a href="{% url 'add_song' 1 song.id %}">
+        Add to Playlist
+    </a>
+{% endfor %}
